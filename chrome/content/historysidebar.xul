@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<overlay id="gkAddons" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript" src="chrome://gaspacho-kiosk/content/common.js" />
+<script>
+function gk_addons_init(){
+    top.toggleSidebar('viewHistorySidebar');
+    gk_alert();
+}
+
+if(lock){
+    window.addEventListener("load",gk_addons_init,false);
+}
+</script>
+</overlay>
+

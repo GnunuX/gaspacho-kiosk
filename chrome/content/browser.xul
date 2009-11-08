@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://gaspacho-kiosk/skin/gk.css" type="text/css"?>
+<overlay id="gkOverlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript" src="chrome://gaspacho-kiosk/content/common.js"></script>
+  <script type="application/x-javascript" src="chrome://gaspacho-kiosk/content/browser.js"></script>
+
+  <window id="main-window"
+	        onload="gkBrowserStartup()">
+  </window>
+
+  <script>
+    window.addEventListener("load",
+		function(){
+			gk_init();
+		}
+		,false);
+    window.addEventListener("DOMContentLoaded", hook_gk_block, true);
+   
+   function hook_gk_block() {
+      window._content.addEventListener("DOMContentLoaded", gk_checkurl, true);
+   }
+
+  </script>
+  <commandset>
+	  <command id="View:FullScreen" oncommand="gkBrowserFullScreen();"/>
+	  <command id="View:DoNothing" oncommand="gk_donothing();"/>
+  </commandset>
+
+
+  <keyset id="mainKeyset">
+    <key id="key_newNavigator" disabled="true"/>
+    <!--<key id="key_newNavigatorTab" disabled="true"/>-->
+    <!--<key id="focusURLBar" disabled="true"/>
+    <key id="focusURLBar2" disabled="true"/>-->
+    <!--<key id="key_search" disabled="true"/>
+    <key id="key_search2" disabled="true"/>-->
+    <key id="key_openDownloads" disabled="true"/>
+    <key id="openFileKb" disabled="true"/>
+    <key id="key_savePage" disabled="true"/>
+    <key id="printKb" disabled="true"/>
+    <key id="key_close" command="View:DoNothing"/>
+    <key id="key_closeWindow" command="View:DoNothing"/>
+    <key id="key_undo" disabled="true"/>
+    <key id="key_redo" disabled="true"/>
+    <!--<key id="key_cut" disabled="true"/>
+    <key id="key_copy" disabled="true"/>
+    <key id="key_paste" disabled="true"/>-->
+    <!--<key id="key_delete" disabled="true"/>-->
+    <!--<key id="key_selectAll" disabled="true"/>-->
+    <!--<key id="goBackKb" disabled="true"/>
+    <key id="goForwardKb" disabled="true"/>
+    <key id="goHome" keycode="VK_HOME" command="Browser:Home" modifiers="alt"/>-->
+    <key id="key_viewSource" disabled="true"/>
+    <!--<key id="key_find" disabled="true"/>
+    <key id="key_findAgain" disabled="true"/>
+    <key id="key_findPrevious" disabled="true"/>-->
+    <key id="addBookmarkAsKb" disabled="true"/>
+    <key id="bookmarkAllTabsKb" disabled="true"/>
+    <key id="key_stop" disabled="true"/>
+    <key id="key_gotoHistory" command="View:DoNothing"/>
+    <key id="key_switchTextDirection" disabled="true"/>
+    <key id="key_sanitize" disabled="true"/>
+    <!--<key id="key_undoCloseTab" disabled="true"/>-->
+    <key id="viewBookmarksSidebarKb" command="View:DoNothing"/>
+    <!--<key id="viewBookmarksSidebarWinKb" command="View:DoNothing"/>-->
+    <key id="key_fullScreen" command="View:FullScreen"/>
+    <!--<key id="key_textZoomReduce" disabled="true"/>
+    <key id="key_textZoomEnlarge" disabled="true"/>
+    <key id="key_textZoomReset" disabled="true"/>-->
+    <key id="showAllHistoryKb" disabled="true"/>
+    <key id="key_errorConsole" disabled="true"/>
+    <key id="manBookmarkKb" disabled="true"/>
+    <key id="key_privatebrowsing" disabled="true"/>
+    <!--<key id="key_fullZoomReduce" disabled="true"/>
+    <key id="key_fullZoomEnlarge" disabled="true"/>
+    <key id="key_fullZoomReset" disabled="true"/>-->
+  </keyset>
+
+</overlay>

@@ -1,0 +1,106 @@
+window {
+  -moz-appearance: none;
+  background: #c7d66f url("chrome://gaspacho-kiosk/skin/gaspacho-tomato.png") no-repeat top left !important;
+}
+tab {
+	background-color: none;
+	opacity: 0.5;
+}
+tabpanels {
+	opacity: 1;
+}
+toolbox, toolbar, menubar, toolbar[type="menubar"] {
+	-moz-appearance: none;
+}
+#close-button {
+	  list-style-image: url("chrome://gaspacho-kiosk/skin/Close.png");
+}
+#urlbar, .searchbar-textbox {
+    padding: 3px !important;
+    margin: 0px !important;
+    margin-right: 10px !important;
+    border : 2px solid black !important;
+    -moz-appearance: none !important;
+    -moz-border-radius-topright: 15px !important;
+    -moz-border-radius-bottomright: 15px !important;
+    -moz-border-radius-topleft: 15px !important;
+    -moz-border-radius-bottomleft: 15px !important;
+    background-color: white !important;
+}
+#urlbar-container, #identity-box, #searchbar, #searchbar-container, .searchbar-engine-button, #window-controls {
+    padding: 0px !important;
+    margin: 0px !important;
+    -moz-appearance: none !important;
+    border: none !important;
+    background: none !important;
+}
+#nav-bar {
+    margin-left: 125px;
+}
+toolbar[iconsize="small"] #home-button ,
+#home-button.bookmark-item {
+  list-style-image: url("moz-icon://stock/gtk-home?size=toolbar");
+}
+toolbar[iconsize="small"] #home-button[disabled="true"] ,
+#home-button.bookmark-item[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-home?size=toolbar&state=disabled");
+}
+toolbar[iconsize="small"] #back-button {
+  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar");
+}
+.unified-nav-back[_moz-menuactive] {
+  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar") !important;
+}
+toolbar[iconsize="small"] #back-button[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-go-back-ltr?size=toolbar&state=disabled");
+}
+
+toolbar[iconsize="small"] #back-button[chromedir="rtl"] {
+  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar");
+}
+menupopup[chromedir="rtl"] > .unified-nav-back[_moz-menuactive] {
+  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar") !important;
+}
+toolbar[iconsize="small"] #back-button[disabled="true"][chromedir="rtl"] {
+  list-style-image: url("moz-icon://stock/gtk-go-back-rtl?size=toolbar&state=disabled");
+}
+
+toolbar[iconsize="small"] #forward-button {
+  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar");
+}
+.unified-nav-forward[_moz-menuactive] {
+  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar") !important;
+}
+toolbar[iconsize="small"] #forward-button[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-go-forward-ltr?size=toolbar&state=disabled");
+}
+
+toolbar[iconsize="small"] #forward-button[chromedir="rtl"] {
+  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar");
+}
+menupopup[chromedir="rtl"] > .unified-nav-forward[_moz-menuactive] {
+  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar") !important;
+}
+toolbar[iconsize="small"] #forward-button[disabled="true"][chromedir="rtl"] {
+  list-style-image: url("moz-icon://stock/gtk-go-forward-rtl?size=toolbar&state=disabled");
+}
+
+toolbar[iconsize="small"] #stop-button {
+  list-style-image: url("moz-icon://stock/gtk-stop?size=toolbar");
+}
+toolbar[iconsize="small"] #stop-button[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-stop?size=toolbar&state=disabled");
+}
+toolbar[iconsize="small"] #reload-button {
+  list-style-image: url("moz-icon://stock/gtk-refresh?size=toolbar");
+}
+toolbar[iconsize="small"] #reload-button[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-refresh?size=toolbar&state=disabled");
+}
+toolbar[iconsize="small"] #print-button {
+  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar");
+}
+toolbar[iconsize="small"] #print-button[disabled="true"] {
+  list-style-image: url("moz-icon://stock/gtk-print?size=toolbar&state=disabled");
+}
+

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+
+<dialog id="gk-options-dialog"
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    buttons="accept, cancel"
+    onload="gk_initializeOptions();"
+    ondialogaccept="return gk_saveOptions();"
+    title="Gaspacho kiosk Options">
+  
+  <script type="application/x-javascript" src="chrome://gaspacho-kiosk/content/options.js"></script>
+  
+  
+  <grid flex="1">
+    
+    <rows>
+      <row/>
+    </rows>
+    
+    <columns>
+      <column>
+        <groupbox align="start">
+          <caption label="General"/>
+          
+          <checkbox id="lock" label="Lock the browser" checked="true"/>
+          <separator class="thin"/>
+          <checkbox id="menu_disallowed" label="Remove menu (in lock mode)" checked="true"/>
+          <separator class="thin"/>
+          <checkbox id="fullscreen" label="Start browser in fullscreen mode"/>
+          <checkbox id="fullscreen_exit" label="Don't allow quit browser in fullscreen mode"/>
+          <checkbox id="fullscreen_autohide" label="Autohide toolbar in fullscreen mode"/>
+          
+          <separator/>
+          <label value="File Extensions that you allowed to download (in lock mode):"/>
+          <textbox id="ext_allowed" size="50"/>
+          <label value="(Separate with comma, ex: exe,bat,pdf ). Use * to allow all."/>
+          
+          <separator class="thin"/>
+          <label value="Protocol that you allowed to use (in lock mode):"/>
+          <textbox id="proto_allowed" size="50"/>
+          <label value="(Separate with comma, ex: http,https,ftp ). Use * to allow all."/>
+          
+        </groupbox>
+      </column>
+      
+    </columns>
+    
+  </grid>
+  
+  
+  <!--
+  .linklabel {
+  color: blue;
+  text-decoration: underline;
+  cursor: pointer;
+  margin: 1px;
+  padding-left: 0px;
+  }
+-->
+</dialog>
+

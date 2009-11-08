@@ -1,0 +1,19 @@
+content gaspacho-kiosk chrome/content/
+skin gaspacho-kiosk default chrome/skin/
+
+overlay chrome://browser/content/browser.xul chrome://gaspacho-kiosk/content/browser.xul
+overlay chrome://browser/content/places/places.xul chrome://gaspacho-kiosk/content/window.xul
+overlay chrome://browser/content/places/moveBookmarks.xul chrome://gaspacho-kiosk/content/window.xul
+overlay chrome://browser/content/bookmarks/addBookmark.xul chrome://gaspacho-kiosk/content/window.xul
+overlay chrome://browser/content/bookmarks/addBookmark2.xul chrome://gaspacho-kiosk/content/window.xul
+overlay chrome://browser/content/history/history-panel.xul chrome://gaspacho-kiosk/content/historysidebar.xul
+overlay chrome://browser/content/bookmarks/bookmarksPanel.xul chrome://gaspacho-kiosk/content/bookmarksidebar.xul
+overlay chrome://mozapps/content/extensions/extensions.xul chrome://gaspacho-kiosk/content/window.xul
+overlay chrome://browser/content/preferences/preferences.xul chrome://gaspacho-kiosk/content/window.xul
+overlay chrome://mozapps/content/downloads/unknownContentType.xul chrome://gaspacho-kiosk/content/saveas.xul
+
+#skins
+style chrome://global/content/customizeToolbar.xul chrome://gaspacho-kiosk/skin/gaspacho-kiosk.css
+# Browser window
+style	chrome://browser/content/browser.xul					chrome://gaspacho-kiosk/skin/browser.css
+

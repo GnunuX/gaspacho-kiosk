@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<overlay id="gkSaveAs" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript" src="chrome://gaspacho-kiosk/content/common.js" />
+<script>
+function gksaveasinit(){
+        this.url = this.dialog.mLauncher.source.spec;
+        if(!gk_saveas(this.url))
+            document.documentElement.setAttribute('ondialogaccept', close());
+}
+
+if(lock){
+    window.addEventListener("load",function(){gksaveasinit();},false);
+}
+</script>
+</overlay>

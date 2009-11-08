@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<window class="dialog"
+	title="Gaspacho Kiosk - About"
+	orient="vertical"
+	autostretch="always"
+	onload="sizeToContent()"
+	xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<groupbox align="center" orient="horizontal">
+<vbox>
+  <text value="Gaspacho Kiosk" style="font-weight: bold; font-size: x-large;"/>
+  <text value="ver. 1.0"/>
+  <separator class="thin"/>
+  <text value="Created By:" style="font-weight: bold;"/>
+  <text value="GARETTE Emmanuel" class="url"
+        onclick="window.open('http://www.gnunux.info'); window.close();"/>
+  <text value="Email:" style="font-weight: bold;"/>
+  <text value="gnunux@gnunux.info"/>
+  <text value="Home Page:" style="font-weight: bold;"/>
+  <text value="http://www.gnunux.info/"
+        class="url"
+	onclick="window.open('http://www.gnunux.info/'); window.close();"/>
+  <text value="Inspired By:" style="font-weight: bold;"/>
+  <text value="Public Fox 1.05"/>
+  <text value="Igor Rashnitsov and Eric Edwards" class="url"
+        onclick="window.open('http://www.userreply.com'); window.close();"/>
+  <separator class="thin"/>
+
+  <separator class="thin"/>
+</vbox>
+<spring flex="1"/>
+<image src="chrome://gaspacho-kiosk/skin/gaspacho-logo.png"/>
+</groupbox>
+
+  <hbox>
+  <spacer flex="1"/>
+   <button label="Close" oncommand="window.close();"/>
+  </hbox>
+
+</window>

@@ -1,0 +1,9 @@
+toolbar[iconsize="small"] #gaspacho-toolbar-button {
+  list-style-image: url("chrome://gaspacho-kiosk/skin/gaspacho-small.png");
+
+}
+#gaspacho-toolbar-button {
+  list-style-image: url("chrome://gaspacho-kiosk/skin/gaspacho.png");
+
+}
+

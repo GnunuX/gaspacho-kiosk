@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<overlay id="gkBookmarkSidebar" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<script type="application/x-javascript" src="chrome://gaspacho-kiosk/content/common.js" />
+<script>
+function gk_addbookmark_init(){
+    top.toggleSidebar('viewBookmarksSidebar');
+    gk_alert();
+}
+
+if(lock){
+    window.addEventListener("load",gk_addbookmark_init,false);
+}
+</script>
+</overlay>
+
